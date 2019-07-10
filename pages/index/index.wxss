@@ -1,0 +1,47 @@
+.myscroll{
+	background-color: red;
+}
+
+.scroll-x {
+  display: flex;
+  flex-direction: row; 
+  height: 500px;
+  width: 1000px;
+  background-color: green;
+}
+
+.out {
+  background: #ddd;
+  padding: 20px 10px;
+  width: 100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+
+.mainview
+{
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+  background: green;
+}
+
+.inner-box
+{
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+  background: blue;
+}
+
+.image_frame
+{
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  background: white;
+}

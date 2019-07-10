@@ -1,0 +1,35 @@
+
+page{
+  background: rgb(116, 149, 219);
+}
+
+.out {
+  padding: 20px 10px;
+  width: 100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+}
+
+.all {
+  font-size: 45rpx;
+  color: white;
+}
+
+/*设置行内块*/
+
+.out  .item {
+  width: 150px;
+  height: 350px;
+  border: 1px solid rgb(99, 98, 167);
+  background: rgb(92, 98, 145);
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 40rpx;
+  color: white;
+}
+
+.image_frame {
+  width: 70px;
+  height: 70px;
+}

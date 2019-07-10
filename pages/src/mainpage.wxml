@@ -1,0 +1,41 @@
+<wxs module="util">
+    var sub = function(val) {
+        return val.substring(val.length - 5, val.length)
+    }
+    module.exports.sub = sub;
+</wxs>
+
+<view class='all'>
+
+<view>地区:  {{province}}{{city}}{{district}}</view>
+
+<view class='out'>
+  <scroll-view scroll-x scroll-into-view='item2'>
+
+    <view wx:for-items="{{scrolls}}" wx:key="date" class='item'>
+      <view class='inner'>
+      
+      <text class='inner-box' wx:if="{{index == 0}}">
+         今天 \n
+         {{item.week}} \n
+         {{item.wea}} \n
+        温度： {{item.tem2}}° ~ {{item.tem1}}°
+      </text>
+
+      <text class='inner-box' wx:if="{{index > 0}}">
+         {{util.sub(item.date)}}\n
+         {{item.week}} \n
+         {{item.wea}} \n
+        温度： {{item.tem2}}° ~ {{item.tem1}}°
+      </text>
+
+      <image class="image_frame" src="../images/{{item.wea_img}}.png" mode="aspectFit">
+      </image>
+      
+      </view>
+    </view>
+
+  </scroll-view>
+</view>
+
+</view>

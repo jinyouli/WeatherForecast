@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/src/mainpage",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天气预报",
+    "navigationBarTextStyle": "black"
+  },
+
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置将用于获取周围地理信息"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
